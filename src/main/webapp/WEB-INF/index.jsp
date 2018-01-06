@@ -20,11 +20,12 @@
 
 		<style type="text/css">
 			body{
-				background: #3e5c97; /* Old browsers */
-				background: -moz-radial-gradient(center, ellipse cover, #3e5c97 0%, #3c537d 44%, #3c4c5b 100%); /* FF3.6-15 */
-				background: -webkit-radial-gradient(center, ellipse cover, #3e5c97 0%,#3c537d 44%,#3c4c5b 100%); /* Chrome10-25,Safari5.1-6 */
-				background: radial-gradient(ellipse at center, #3e5c97 0%,#3c537d 44%,#3c4c5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5c97', endColorstr='#3c4c5b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background: #356aa0; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #356aa0 0%, #356aa0 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, #356aa0 0%,#356aa0 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, #356aa0 0%,#356aa0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+				
 				color: lightgrey;
 			}
 
@@ -34,15 +35,17 @@
 
 			/*Inputs*/
 			input.form-control{
-				background-color: rgba(32,32,32,0.20);
+				background-color: rgba(32,32,32,.1);
 				border: 1px solid rgba(16,16,16,.25);
+				color: lightgrey;
 			}
 			input.form-control:hover{
 				background-color: rgba(16,16,16,0.20);
+				color: white;
 			}
 			input.form-control:focus{
 				background-color: rgba(16,16,16,0.20);
-				color: lightgrey;
+				color: white;
 			}
 			.btn-default{
 				color: lightgrey;
