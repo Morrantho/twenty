@@ -26,13 +26,13 @@
 				background: radial-gradient(ellipse at center, #3e5c97 0%,#3c537d 44%,#3c4c5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5c97', endColorstr='#3c4c5b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-				color: white;
+				color: #ddd;
 			}
 
 			.btn-default{
 				background-color: rgba(32,32,32,0.25);
 				border-radius: 8px;
-				color: white;
+				color: #ddd;
 			}
 
 			.display-4{
@@ -49,17 +49,17 @@
 			}
 
 			input.form-control:hover{
-				background-color: rgba(16,16,16,0.25);
+				background-color: rgba(102,102,102,0.5);
 			}
 
 			input.form-control:focus{
 				background-color: rgba(16,16,16,0.25);
-				color: white;
+				color: #ddd;
 			}
 
 			tr:hover{
-				background-color: rgba(16,16,16,0.125);
-				color: white;	
+				background-color: rgba(102,102,102,0.5);
+				color: #ddd;	
 			}
 
 			button{
@@ -67,7 +67,7 @@
 			}
 
 			button:hover{
-				background-color: rgba(16,16,16,0.5);
+				background-color: rgba(102,102,102,0.5);
 			}
 
 			.centerParent{
@@ -81,6 +81,24 @@
 				width: 100%;
 				margin: 1% auto;
 			}
+
+			.scroll {
+			  width: 20px;
+			  height: 200px;
+			  overflow: auto;
+			  float: left;
+			  margin: 0 10px;
+			}
+			::-webkit-scrollbar {
+			  width: 5px;
+			}			 
+			::-webkit-scrollbar-thumb {
+			  background: #ddd; 
+			}
+			::-webkit-scrollbar-track {
+			  background: #666; 
+			}
+
 		</style>
 	</head>
 
@@ -120,7 +138,7 @@
 
 			<form id="timerForm" class="form-horizontal" action="/action_page.php">
 				<div class="form-group">
-					<label class="control-label col-sm-2  btn-block centerChild" for="username">Username:</label>
+					<label class="control-label col-sm-2  btn-block centerChild" for="username">Name:</label>
 
 					<div class="col-sm-4 centerParent">
 						<input type="text" class="form-control centerChild" id="username">

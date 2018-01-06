@@ -24,10 +24,10 @@ $(document).ready(function(){
 					<td>${answers}</td>
 					<td>${restarts}</td>
 					<td>
-						<button id="resetBtn${user.id}" type="button" class="resetBtn btn-block btn-success">Reset</button>
+						<button id="resetBtn${user.id}" type="button" class="resetBtn btn-block btn-default">Reset</button>
 					</td>
 					<td>
-						<button id="removeBtn${user.id}" type="button" class="removeBtn btn-block btn-danger">Remove</button>
+						<button id="removeBtn${user.id}" type="button" class="removeBtn btn-block btn-default">Remove</button>
 					</td>
 				</tr>
 			`);

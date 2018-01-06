@@ -1,5 +1,0 @@
-com\project\app\services\UserService.class
-com\project\app\appApplication.class
-com\project\app\models\User.class
-com\project\app\controllers\UserController.class
-com\project\app\repositories\UserRepository.class
