@@ -25,63 +25,47 @@
 				background: -webkit-radial-gradient(center, ellipse cover, #3e5c97 0%,#3c537d 44%,#3c4c5b 100%); /* Chrome10-25,Safari5.1-6 */
 				background: radial-gradient(ellipse at center, #3e5c97 0%,#3c537d 44%,#3c4c5b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e5c97', endColorstr='#3c4c5b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-				color: #ddd;
-			}
-
-			.btn-default{
-				background-color: rgba(32,32,32,0.25);
-				border-radius: 8px;
-				color: #ddd;
+				color: lightgrey;
 			}
 
 			.display-4{
 				text-align: center;
 			}
 
-			table.table{
-				background-color: rgba(32,32,32,0.25);
-				border-radius: 8px;
-			}
-
+			/*Inputs*/
 			input.form-control{
-				background-color: rgba(32,32,32,0.25);
+				background-color: rgba(32,32,32,0.20);
+				border: 1px solid rgba(16,16,16,.25);
 			}
-
 			input.form-control:hover{
-				background-color: rgba(102,102,102,0.5);
+				background-color: rgba(16,16,16,0.20);
 			}
-
 			input.form-control:focus{
-				background-color: rgba(16,16,16,0.25);
-				color: #ddd;
+				background-color: rgba(16,16,16,0.20);
+				color: lightgrey;
 			}
-
-			tr:hover{
-				background-color: rgba(102,102,102,0.5);
-				color: #ddd;	
+			.btn-default{
+				color: lightgrey;
+				border: 1px solid rgba(32,32,32,.5);
+				border-radius: 4px;
 			}
-
-			button{
-				background-color: rgba(32,32,32,0.25);
-			}
-
 			button:hover{
-				background-color: rgba(102,102,102,0.5);
+				color: white;
 			}
 
+			/*Parenting*/
 			.centerParent{
 				text-align: center;
 				width:50%;
 				margin: 0 auto;
 			}
-
 			.centerChild{
 				text-align: center;
 				width: 100%;
 				margin: 1% auto;
 			}
 
+			/*Scrollbar*/
 			.scroll {
 			  width: 20px;
 			  height: 200px;
@@ -93,12 +77,49 @@
 			  width: 5px;
 			}			 
 			::-webkit-scrollbar-thumb {
-			  background: #ddd; 
+			  background: grey; 
 			}
 			::-webkit-scrollbar-track {
 			  background: #666; 
 			}
 
+			/*Button Colors*/
+			.removeBtn{
+				background-color: rgba(255,99,132,0.2);
+				border: 1px solid rgba(255,99,132,1);
+			}
+			.resetBtn{
+				background-color: rgba(75,192,192,0.2);
+				border: 1px solid rgba(75,192,192,1);
+			}
+			.submitBtn{
+				background-color: rgba(54,162,235,0.2);
+				border: 1px solid rgba(54,162,235,1);
+			}
+
+			/*Tables*/
+			table{					
+				background-color: rgba(32,32,32,0.2);
+				border-collapse: separate;
+				border-spacing: 1px;
+				border-radius: 4px;
+			}
+			table.table{
+				background-color: rgba(32,32,32,0.2);
+				border: 1px solid rgba(16,16,16,.20);
+			}
+			tr:hover{
+				background-color: rgba(16,16,16,0.20);
+				color: white;
+			}
+			.table thead th{
+				border: 1px solid rgba(16,16,16,.25);
+				border-radius: 4px;
+			}
+			.table-bordered td{
+				border: 1px solid rgba(16,16,16,.25);
+				border-radius: 4px;
+			}
 		</style>
 	</head>
 
@@ -113,7 +134,7 @@
 						<th>Time:</th>
 						<th>Answers:</th>
 						<th>Restarts:</th>
-						<th>Reset:</th>
+						<th>Restart:</th>
 						<th>Remove:</th>
 					</tr>
 				</thead>
@@ -126,7 +147,7 @@
 							<td>${user.answers}</td>
 							<td>${user.restarts}</td>
 							<td>
-								<button id="resetBtn${user.id}" class="resetBtn btn-block btn-default">Reset</button>
+								<button id="resetBtn${user.id}" class="resetBtn btn-block btn-default">Restart</button>
 							</td>
 							<td>
 								<button id="removeBtn${user.id}" class="removeBtn btn-block btn-default">Remove</button>
@@ -147,7 +168,7 @@
 
 				<div class="form-group">        
 					<div class="col-sm-4 centerParent">
-						<button type="submit" class="btn-block btn-default centerChild">Submit</button>
+						<button type="submit" class="submitBtn btn-block btn-default centerChild">Submit</button>
 					</div>
 				</div>
 			</form>
