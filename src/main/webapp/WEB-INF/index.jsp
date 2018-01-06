@@ -20,11 +20,23 @@
 
 		<style type="text/css">
 			body{
-background: #356aa0; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover, #356aa0 0%, #356aa0 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover, #356aa0 0%,#356aa0 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center, #356aa0 0%,#356aa0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#356aa0', endColorstr='#356aa0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+				/* IE10+ */ 
+				background-image: -ms-radial-gradient(center, ellipse farthest-corner, #aaa 0%, #3C4C5B 100%);
+
+				/* Mozilla Firefox */ 
+				background-image: -moz-radial-gradient(center, ellipse farthest-corner, #aaa 0%, #3C4C5B 100%);
+
+				/* Opera */ 
+				background-image: -o-radial-gradient(center, ellipse farthest-corner, #aaa 0%, #3C4C5B 100%);
+
+				/* Webkit (Safari/Chrome 10) */ 
+				background-image: -webkit-gradient(radial, center center, 0, center center, 286, color-stop(0, #aaa), color-stop(100, #3C4C5B));
+
+				/* Webkit (Chrome 11+) */ 
+				background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #aaa 0%, #3C4C5B 100%);
+
+				/* W3C Markup */ 
+				background-image: radial-gradient(ellipse farthest-corner at center, #aaa 0%, #3C4C5B 100%);
 				
 				color: lightgrey;
 			}
